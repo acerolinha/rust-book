@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./ch16/shared-state-concurrency/Cargo.toml"
+    ]
+}
