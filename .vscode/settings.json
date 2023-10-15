@@ -2,6 +2,7 @@
     "rust-analyzer.linkedProjects": [
         "./ch01/hello_cargo/Cargo.toml",
         "./ch02/guessing_game/Cargo.toml",
+        "./ch03/variables/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
