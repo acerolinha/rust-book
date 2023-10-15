@@ -6,6 +6,7 @@
         "./ch03/data_types/Cargo.toml",
         "./ch03/functions/Cargo.toml",
         "./ch03/comments/Cargo.toml",
+        "./ch03/control_flow/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
