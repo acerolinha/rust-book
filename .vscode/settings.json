@@ -1,5 +1,6 @@
 {
     "rust-analyzer.linkedProjects": [
+        "./ch02/guessing_game/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
