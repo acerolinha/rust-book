@@ -10,6 +10,8 @@ fn main() {
     let second = a[1];
     // the next line would cause the program to panic with 'index out of bounds' error
     // let third = a[10];
+
+    println!("{}", first + second + b[1] + c[2]);
 }
 
 // tuple type
