@@ -8,6 +8,7 @@
         "./ch03/comments/Cargo.toml",
         "./ch03/control_flow/Cargo.toml",
         "./ch04/ownership/Cargo.toml",
+        "./ch04/references_and_borrowing/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
