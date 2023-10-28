@@ -10,6 +10,7 @@
         "./ch04/ownership/Cargo.toml",
         "./ch04/references_and_borrowing/Cargo.toml",
         "./ch04/slice_type/Cargo.toml",
+        "./ch05/structs/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
