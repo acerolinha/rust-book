@@ -35,6 +35,7 @@ impl Rectangle {
         }
     }
 }
+
 fn main() {
     let rect1 = Rectangle {
         width: 30,
