@@ -12,6 +12,7 @@
         "./ch04/slice_type/Cargo.toml",
         "./ch05/structs/Cargo.toml",
         "./ch05/rectangles/Cargo.toml",
+        "./ch06/enums/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
