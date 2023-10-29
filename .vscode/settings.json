@@ -14,6 +14,7 @@
         "./ch05/rectangles/Cargo.toml",
         "./ch06/enums/Cargo.toml",
         "./ch06/_match/Cargo.toml",
+        "./ch06/if_let/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
