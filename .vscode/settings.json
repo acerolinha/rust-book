@@ -15,6 +15,8 @@
         "./ch06/enums/Cargo.toml",
         "./ch06/_match/Cargo.toml",
         "./ch06/if_let/Cargo.toml",
+        "./ch07/restaurant/Cargo.toml",
+        "./ch07/restaurant_separated/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
