@@ -3,32 +3,40 @@ mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
 
+        #[allow(dead_code)]
         fn seat_at_table() {}
     }
 
     mod serving {
+        #[allow(dead_code)]
         fn take_order() {}
 
+        #[allow(dead_code)]
         fn serve_order() {}
 
+        #[allow(dead_code)]
         fn take_payment() {}
     }
 }
 
 // using super to refer to parent module
+#[allow(dead_code)]
 fn deliver_order() {}
 
 mod back_of_house {
+    #[allow(dead_code)]
     fn fix_incorrect_order() {
         cook_order();
         super::deliver_order();
     }
 
+    #[allow(dead_code)]
     fn cook_order() {}
 
     // pub with structs
     pub struct Breakfast {
         pub toast: String,
+        #[allow(dead_code)]
         season_fruit: String, // this field is private
     }
 
@@ -64,25 +72,31 @@ use std::fmt;
 use std::io;
 
 // parent is specified for disambiguation
+#[allow(dead_code)]
 fn fun1(_: fmt::Result) {}
+#[allow(dead_code)]
 fn fun2(_: io::Result<()>) {}
 
 // providing new names with as keyword
 
 use std::io::Result as IoResult;
 
+#[allow(dead_code)]
 fn fun3(_: IoResult<()>) {}
 
 // re-exporting names with pub use
 pub use crate::back_of_house::Appetizer;
 
 // nested paths
+#[allow(unused_imports)]
 use std::{cmp::Ordering, i16};
 
 // using self
+#[allow(unused_imports)]
 use std::array::{self, IntoIter};
 
 // glob operator
+#[allow(unused_imports)]
 use std::collections::*;
 
 pub fn eat_at_restaurant() {
@@ -109,6 +123,8 @@ pub fn eat_at_restaurant() {
     // The next line won't compile because seasonal_fruit field is private
     // meal.seasonal_fruit = String::from("blueberries");
 
+    #[allow(unused_variables)]
     let order1 = back_of_house::Appetizer::Soup;
+    #[allow(unused_variables)]
     let order2 = back_of_house::Appetizer::Salad;
 }
