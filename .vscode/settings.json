@@ -22,6 +22,7 @@
         "./ch08/hash_maps/Cargo.toml",
         "./ch08/exercises/Cargo.toml",
         "./ch09/panic/Cargo.toml",
+        "./ch09/result/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
