@@ -20,6 +20,7 @@
         "./ch08/vectors/Cargo.toml",
         "./ch08/strings/Cargo.toml",
         "./ch08/hash_maps/Cargo.toml",
+        "./ch08/exercises/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
