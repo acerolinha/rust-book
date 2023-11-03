@@ -19,6 +19,7 @@
         "./ch07/restaurant_separated/Cargo.toml",
         "./ch08/vectors/Cargo.toml",
         "./ch08/strings/Cargo.toml",
+        "./ch08/hash_maps/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
