@@ -24,6 +24,7 @@
         "./ch09/panic/Cargo.toml",
         "./ch09/result/Cargo.toml",
         "./ch10/duplicates/Cargo.toml",
+        "./ch10/generics/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
