@@ -27,6 +27,7 @@
         "./ch10/generics/Cargo.toml",
         "./ch10/traits/Cargo.toml",
         "./ch10/lifetimes/Cargo.toml",
+        "./ch11/adder/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
