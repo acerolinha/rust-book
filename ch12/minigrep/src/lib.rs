@@ -10,13 +10,25 @@ pub struct Config {
 
 impl Config {
     pub fn build(args: &[String]) -> Result<Config, &'static str> {
-        if args.len() < 3 {
-            return Err("not enough arguments");
+        match args.len() {
+            ..=2 => return Err("not enough arguments"),
+            5.. => return Err("too many arguments"),
+            _ => (),
         }
+
         let query = args[1].clone();
         let file_path = args[2].clone();
 
-        let ignore_case = env::var("IGNORE_CASE").is_ok();
+        let ignore_case = match args.get(3) {
+            Some(x) => {
+                if x == "-i" {
+                    true
+                } else {
+                    return Err("unkown argument");
+                }
+            }
+            None => env::var("IGNORE_CASE").is_ok(),
+        };
 
         Ok(Config {
             query,
