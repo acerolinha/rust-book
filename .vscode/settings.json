@@ -35,6 +35,7 @@
         "./ch13/minigrep/Cargo.toml",
         "./ch14/add/Cargo.toml",
         "./ch15/_box/Cargo.toml",
+        "./ch15/deref/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
