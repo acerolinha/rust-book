@@ -33,6 +33,7 @@
         "./ch13/closures/Cargo.toml",
         "./ch13/iterators/Cargo.toml",
         "./ch13/minigrep/Cargo.toml",
+        "./ch14/add/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
