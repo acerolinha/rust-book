@@ -41,6 +41,7 @@
         "./ch15/ref_cell/Cargo.toml",
         "./ch15/reference_cycles/Cargo.toml",
         "./ch16/threads/Cargo.toml",
+        "./ch16/message_passing/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
