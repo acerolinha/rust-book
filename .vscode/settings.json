@@ -37,6 +37,7 @@
         "./ch15/_box/Cargo.toml",
         "./ch15/deref/Cargo.toml",
         "./ch15/drop/Cargo.toml",
+        "./ch15/rc/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml"
     ]
 }
