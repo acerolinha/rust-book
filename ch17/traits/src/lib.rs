@@ -1,0 +1,32 @@
+// defining a trait
+pub trait Draw {
+    fn draw(&self);
+}
+
+// defining a struct that holds a vector of trait objects
+pub struct Screen {
+    pub components: Vec<Box<dyn Draw>>,
+}
+
+impl Screen {
+    pub fn run(&self) {
+        for component in &self.components {
+            component.draw();
+        }
+    }
+}
+
+// implementing a trait on a type
+#[derive(Debug)]
+pub struct Button {
+    pub width: u32,
+    pub height: u32,
+    pub label: String,
+}
+
+impl Draw for Button {
+    fn draw(&self) {
+        // code to actually draw a button
+        println!("Drawing a button: {:?}", self)
+    }
+}
