@@ -43,6 +43,7 @@
         "./ch16/threads/Cargo.toml",
         "./ch16/message_passing/Cargo.toml",
         "./ch16/shared_state_concurrency/Cargo.toml",
-        "./ch17/traits/Cargo.toml"
+        "./ch17/traits/Cargo.toml",
+        "./ch17/blog/Cargo.toml"
     ]
 }
