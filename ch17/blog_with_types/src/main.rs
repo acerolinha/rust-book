@@ -9,5 +9,7 @@ fn main() {
 
     let post = post.approve();
 
-    assert_eq!("I ate a salad for lunch today", post.content())
+    let post = post.approve();
+
+    assert_eq!("I ate a salad for lunch today", post.content());
 }
