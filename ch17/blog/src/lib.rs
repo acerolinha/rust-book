@@ -12,7 +12,7 @@ impl Post {
     }
 
     pub fn add_text(&mut self, text: &str) {
-        self.content.push_str(text);
+        self.content = self.state.as_ref().unwrap().add_text(&self.content, text);
     }
 
     pub fn content(&self) -> &str {
@@ -35,8 +35,14 @@ impl Post {
 trait State {
     fn request_review(self: Box<Self>) -> Box<dyn State>;
     fn approve(self: Box<Self>) -> Box<dyn State>;
-    fn content<'a>(&self, _: &'a Post) -> &'a str {
+    fn reject(self: Box<Self>) -> Box<dyn State>;
+
+    fn content<'a>(&self, _post: &'a Post) -> &'a str {
         ""
+    }
+
+    fn add_text(&self, original_text: &str, _text_to_add: &str) -> String {
+        original_text.to_string()
     }
 }
 
@@ -50,6 +56,14 @@ impl State for Draft {
     fn approve(self: Box<Self>) -> Box<dyn State> {
         self
     }
+
+    fn reject(self: Box<Self>) -> Box<dyn State> {
+        self
+    }
+
+    fn add_text(&self, original_text: &str, text_to_add: &str) -> String {
+        format!("{original_text}{text_to_add}")
+    }
 }
 
 struct PendingReview {}
@@ -60,7 +74,27 @@ impl State for PendingReview {
     }
 
     fn approve(self: Box<Self>) -> Box<dyn State> {
+        Box::new(PendingSecondApproval {})
+    }
+
+    fn reject(self: Box<Self>) -> Box<dyn State> {
+        Box::new(Draft {})
+    }
+}
+
+struct PendingSecondApproval {}
+
+impl State for PendingSecondApproval {
+    fn request_review(self: Box<Self>) -> Box<dyn State> {
+        self
+    }
+
+    fn approve(self: Box<Self>) -> Box<dyn State> {
         Box::new(Published {})
+    }
+
+    fn reject(self: Box<Self>) -> Box<dyn State> {
+        Box::new(PendingReview {})
     }
 }
 
@@ -73,6 +107,10 @@ impl State for Published {
 
     fn approve(self: Box<Self>) -> Box<dyn State> {
         self
+    }
+
+    fn reject(self: Box<Self>) -> Box<dyn State> {
+        Box::new(PendingSecondApproval {})
     }
 
     fn content<'a>(&self, post: &'a Post) -> &'a str {
