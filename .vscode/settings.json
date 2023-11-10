@@ -45,6 +45,7 @@
         "./ch16/shared_state_concurrency/Cargo.toml",
         "./ch17/traits/Cargo.toml",
         "./ch17/blog/Cargo.toml",
-        "./ch17/blog_with_types/Cargo.toml"
+        "./ch17/blog_with_types/Cargo.toml",
+        "./ch18/using_patterns/Cargo.toml"
     ]
 }
