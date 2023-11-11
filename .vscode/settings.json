@@ -49,5 +49,6 @@
         "./ch18/using_patterns/Cargo.toml",
         "./ch18/refutability/Cargo.toml",
         "./ch18/pattern_syntax/Cargo.toml",
+        "./ch19/_unsafe/Cargo.toml",
     ]
 }
