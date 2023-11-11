@@ -48,5 +48,6 @@
         "./ch17/blog_with_types/Cargo.toml",
         "./ch18/using_patterns/Cargo.toml",
         "./ch18/refutability/Cargo.toml",
+        "./ch18/pattern_syntax/Cargo.toml",
     ]
 }
