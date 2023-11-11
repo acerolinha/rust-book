@@ -50,5 +50,6 @@
         "./ch18/refutability/Cargo.toml",
         "./ch18/pattern_syntax/Cargo.toml",
         "./ch19/_unsafe/Cargo.toml",
+        "./ch19/advanced_traits/Cargo.toml",
     ]
 }
