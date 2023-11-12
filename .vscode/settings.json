@@ -54,5 +54,6 @@
         "./ch19/advanced_types/Cargo.toml",
         "./ch19/functions_and_closures/Cargo.toml",
         "./ch19/macros/Cargo.toml",
+        "./ch20/hello_single/Cargo.toml",
     ]
 }
