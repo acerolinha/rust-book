@@ -56,5 +56,6 @@
         "./ch19/macros/Cargo.toml",
         "./ch20/hello_single/Cargo.toml",
         "./ch20/hello_multi/Cargo.toml",
+        "./ch20/graceful_shutdown/Cargo.toml",
     ]
 }
