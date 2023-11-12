@@ -25,4 +25,11 @@ fn main() {
     fn _bar() -> ! {
         panic!("This function never returns!");
     }
+
+    // dynamically sized types and the Sized trait
+    // the following code will not compile
+    // because the size of a str value isn't known at compile time
+
+    // let s1: str = "Hello there!";
+    // let s2: str = "How's it going?";
 }

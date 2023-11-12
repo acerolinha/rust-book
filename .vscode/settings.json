@@ -52,5 +52,6 @@
         "./ch19/_unsafe/Cargo.toml",
         "./ch19/advanced_traits/Cargo.toml",
         "./ch19/advanced_types/Cargo.toml",
+        "./ch19/functions_and_closures/Cargo.toml",
     ]
 }
